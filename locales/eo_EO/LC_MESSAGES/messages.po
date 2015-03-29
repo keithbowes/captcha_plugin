@@ -1,0 +1,19 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: b 2e\n"
+"PO-Revision-Date: 2009-01-18 13:44-0500\n"
+"Last-Translator: Keith Bowes <keith@localhost>\n"
+"Language-Team: Esperanto\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "You must provide the correct answer to the anti-spam question."
+msgstr "Vi devas doni la &#285;ustan respondon al la kontra&#365;spama demando."
+
+msgid "The name of who wrote this entry"
+msgstr "La nomo de tiu, kiu skribis &#265;i tiun blogeron"
+
+msgid "Anti-spam:  "
+msgstr "Kontra&#365;spamilo: "

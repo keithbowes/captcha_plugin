@@ -1,0 +1,8 @@
+msgid "Anti-spam:  "
+msgstr ""
+
+msgid "The name of who wrote this entry"
+msgstr ""
+
+msgid "You must provide the correct answer to the anti-spam question: "
+msgstr ""
