@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: b 2e\n"
 "Report-Msgid-Bugs-To: http://fplanque.net/\n"
-"POT-Creation-Date: 2015-03-29 19:43-0400\n"
-"PO-Revision-Date: 2015-03-29 19:59-0400\n"
+"POT-Creation-Date: 2015-03-30 00:04-0400\n"
+"PO-Revision-Date: 2015-03-30 00:09-0400\n"
 "Last-Translator: Keith Bowes <keith@localhost>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -20,14 +20,22 @@ msgstr "El nombre de quien escribí esa entrada"
 msgid "Reduces spam by asking the commenter the name of who wrote the article"
 msgstr "Reduce spam con le pregunta al comentador el nombro de quien escribí el articulo"
 
-#: ../../../_who.plugin.php:23
+#: ../../../_who.plugin.php:25
 msgid "Anti-spam:  "
 msgstr "Antispam:  "
 
-#: ../../../_who.plugin.php:25
-msgid "The name of who wrote this entry"
-msgstr "El nombre de quien escribí esa entrada"
-
-#: ../../../_who.plugin.php:40
+#: ../../../_who.plugin.php:96
 msgid "You must provide the correct answer to the anti-spam question."
 msgstr "Debes proveer el repuesta correcta a la pregunta antispame."
+
+#: ../../../_who.plugin.php:117
+msgid "Questions for all collections"
+msgstr "Preguntas para todas las colecciones"
+
+#: ../../../_who.plugin.php:118 ../../../_who.plugin.php:130
+msgid "Format: Question? ||Answer1|Answer2|..."
+msgstr "Format: Pregunta? ||Repuesta1|Repuesta2|…"
+
+#: ../../../_who.plugin.php:129
+msgid "Questions for this collection only"
+msgstr "Preguntas para sólo esta colección"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: b 2e\n"
 "Report-Msgid-Bugs-To: http://fplanque.net/\n"
-"POT-Creation-Date: 2015-03-29 19:43-0400\n"
+"POT-Creation-Date: 2015-03-30 00:04-0400\n"
 "PO-Revision-Date: 2009-01-18 13:42-0500\n"
 "Last-Translator: Keith Bowes <keith@localhost>\n"
 "Language-Team: English\n"
@@ -20,14 +20,22 @@ msgstr ""
 msgid "Reduces spam by asking the commenter the name of who wrote the article"
 msgstr ""
 
-#: ../../../_who.plugin.php:23
+#: ../../../_who.plugin.php:25
 msgid "Anti-spam:  "
 msgstr ""
 
-#: ../../../_who.plugin.php:25
-msgid "The name of who wrote this entry"
+#: ../../../_who.plugin.php:96
+msgid "You must provide the correct answer to the anti-spam question."
 msgstr ""
 
-#: ../../../_who.plugin.php:40
-msgid "You must provide the correct answer to the anti-spam question."
+#: ../../../_who.plugin.php:117
+msgid "Questions for all collections"
+msgstr ""
+
+#: ../../../_who.plugin.php:118 ../../../_who.plugin.php:130
+msgid "Format: Question? ||Answer1|Answer2|..."
+msgstr ""
+
+#: ../../../_who.plugin.php:129
+msgid "Questions for this collection only"
 msgstr ""
