@@ -29,7 +29,7 @@ class who_plugin extends Plugin
 		echo '</div>';
 	}
 
-	private function GetQuestions()
+	private function getQuestions()
 	{
 		global $Blog;
 		$global_questions = explode("\r\n", $this->Settings->get('globfrag'));
@@ -40,7 +40,7 @@ class who_plugin extends Plugin
 
 	private function getQuestion($qno = -1)
 	{
-		$questions = $this->GetQuestions();
+		$questions = $this->getQuestions();
 		if ($qno < 0)
 		{
 			$qno = count($questions);
@@ -49,21 +49,6 @@ class who_plugin extends Plugin
 		}
 
 		return $questions[$qno];
-	}
-
-	private function getAnswer($question)
-	{
-		$questions = $this->GetQuestions();
-		foreach ($questions as $q)
-		{
-			if (strpos($q, $question) === 0)
-			{
-				$this->question = $q;
-				break;
-			}
-		}
-		$this->parseQuestion($question, $answer);
-		return $answer;
 	}
 
 	private function parseQuestion(& $question, & $answer)
@@ -121,7 +106,7 @@ class who_plugin extends Plugin
 		);
 	}
 
-	function GetDefaultUserSettings(& $params)
+	function get_coll_setting_definitions( & $params )
 	{
 		return array(
 			'ortfrag' => array(
@@ -131,11 +116,6 @@ class who_plugin extends Plugin
 				'type' => 'html_textarea',
 			  )
 		  );
-	}
-
-	function get_coll_setting_definitions( & $params )
-	{
-		return $this->GetDefaultUserSettings($params);
 	}
 }
 
