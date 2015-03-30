@@ -1,7 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: b 2evolution\n"
-"PO-Revision-Date: 2014-07-27 15:58-0400\n"
+"Report-Msgid-Bugs-To: http://fplanque.net/\n"
+"POT-Creation-Date: 2015-03-29 19:43-0400\n"
+"PO-Revision-Date: 2015-03-29 19:50-0400\n"
 "Last-Translator: Keith <keith@localhost>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -10,11 +12,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: ../../../_who.plugin.php:16
+msgid "Who wrote this blog entry?"
+msgstr "Wer schrieb diesen Blogeintrag?"
+
+#: ../../../_who.plugin.php:17
+msgid "Reduces spam by asking the commenter the name of who wrote the article"
+msgstr "Reduziert Spam durch fragen dem Kommentator den Namen des Eintragsauthors."
+
+#: ../../../_who.plugin.php:23
 msgid "Anti-spam:  "
 msgstr "Anti-Spam: "
 
+#: ../../../_who.plugin.php:25
 msgid "The name of who wrote this entry"
 msgstr "Der Name des Menschen, der diesen Eintrag schrieb"
 
-msgid "You must provide the correct answer to the anti-spam question: "
+#: ../../../_who.plugin.php:40
+msgid "You must provide the correct answer to the anti-spam question."
 msgstr "Sie müssen die rechte Antwort an die Anti-Spam-Frage geben: "

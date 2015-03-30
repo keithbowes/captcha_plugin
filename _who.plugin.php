@@ -11,6 +11,12 @@ class who_plugin extends Plugin
 
   var $apply_rendering = 'never';
 
+  function PluginInit()
+  {
+	  $this->short_desc = $this->T_('Who wrote this blog entry?');
+	  $this->lon_gdesc = $this->T_('Reduces spam by asking the commenter the name of who wrote the article');
+  }
+
   private function getInput()
 	{
     echo '<div class="label">';
