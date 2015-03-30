@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: b 2e\n"
 "Report-Msgid-Bugs-To: http://fplanque.net/\n"
-"POT-Creation-Date: 2015-03-30 00:04-0400\n"
+"POT-Creation-Date: 2015-03-30 01:33-0400\n"
 "PO-Revision-Date: 2009-01-18 13:42-0500\n"
 "Last-Translator: Keith Bowes <keith@localhost>\n"
 "Language-Team: English\n"
@@ -12,30 +12,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../../../_who.plugin.php:16
-msgid "Who wrote this blog entry?"
+#: ../../../_captcha.plugin.php:16
+msgid "Simple text questions"
 msgstr ""
 
-#: ../../../_who.plugin.php:17
-msgid "Reduces spam by asking the commenter the name of who wrote the article"
+#: ../../../_captcha.plugin.php:17
+msgid "Reduces spam by asking the commenter a question"
 msgstr ""
 
-#: ../../../_who.plugin.php:25
+#: ../../../_captcha.plugin.php:25
 msgid "Anti-spam:  "
 msgstr ""
 
-#: ../../../_who.plugin.php:96
+#: ../../../_captcha.plugin.php:81
 msgid "You must provide the correct answer to the anti-spam question."
 msgstr ""
 
-#: ../../../_who.plugin.php:117
+#: ../../../_captcha.plugin.php:102
 msgid "Questions for all collections"
 msgstr ""
 
-#: ../../../_who.plugin.php:118 ../../../_who.plugin.php:130
+#: ../../../_captcha.plugin.php:103 ../../../_captcha.plugin.php:115
 msgid "Format: Question? ||Answer1|Answer2|..."
 msgstr ""
 
-#: ../../../_who.plugin.php:129
+#: ../../../_captcha.plugin.php:114
 msgid "Questions for this collection only"
 msgstr ""

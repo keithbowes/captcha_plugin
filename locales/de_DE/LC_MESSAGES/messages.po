@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: b 2evolution\n"
 "Report-Msgid-Bugs-To: http://fplanque.net/\n"
-"POT-Creation-Date: 2015-03-30 00:04-0400\n"
-"PO-Revision-Date: 2015-03-30 00:10-0400\n"
+"POT-Creation-Date: 2015-03-30 01:33-0400\n"
+"PO-Revision-Date: 2015-03-30 01:35-0400\n"
 "Last-Translator: Keith <keith@localhost>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -12,30 +12,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../../../_who.plugin.php:16
-msgid "Who wrote this blog entry?"
-msgstr "Wer schrieb diesen Blogeintrag?"
+#: ../../../_captcha.plugin.php:16
+msgid "Simple text questions"
+msgstr "Einfache Textfragen"
 
-#: ../../../_who.plugin.php:17
-msgid "Reduces spam by asking the commenter the name of who wrote the article"
-msgstr "Reduziert Spam durch fragen dem Kommentator den Namen des Eintragsauthors."
+#: ../../../_captcha.plugin.php:17
+msgid "Reduces spam by asking the commenter a question"
+msgstr "Reduziert Spam durch geben dem Kommentator eine Frage."
 
-#: ../../../_who.plugin.php:25
+#: ../../../_captcha.plugin.php:25
 msgid "Anti-spam:  "
 msgstr "Anti-Spam: "
 
-#: ../../../_who.plugin.php:96
+#: ../../../_captcha.plugin.php:81
 msgid "You must provide the correct answer to the anti-spam question."
 msgstr "Sie müssen die rechte Antwort an die Anti-Spam-Frage geben: "
 
-#: ../../../_who.plugin.php:117
+#: ../../../_captcha.plugin.php:102
 msgid "Questions for all collections"
 msgstr "Fragen für alle Kollektionen"
 
-#: ../../../_who.plugin.php:118 ../../../_who.plugin.php:130
+#: ../../../_captcha.plugin.php:103 ../../../_captcha.plugin.php:115
 msgid "Format: Question? ||Answer1|Answer2|..."
 msgstr "Format: Frage? ||Antwort1|Antwort2|..."
 
-#: ../../../_who.plugin.php:129
+#: ../../../_captcha.plugin.php:114
 msgid "Questions for this collection only"
 msgstr "Fragen nur für diese Kollektion"

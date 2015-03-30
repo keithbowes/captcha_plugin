@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: b 2e\n"
 "Report-Msgid-Bugs-To: http://fplanque.net/\n"
-"POT-Creation-Date: 2015-03-30 00:04-0400\n"
-"PO-Revision-Date: 2015-03-30 00:07-0400\n"
+"POT-Creation-Date: 2015-03-30 01:33-0400\n"
+"PO-Revision-Date: 2015-03-30 01:36-0400\n"
 "Last-Translator: Keith Bowes <keith@localhost>\n"
 "Language-Team: Esperanto\n"
 "Language: \n"
@@ -12,30 +12,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../../../_who.plugin.php:16
-msgid "Who wrote this blog entry?"
-msgstr "La nomo de tiu, kiu skribis ĉi tiun blogeron"
+#: ../../../_captcha.plugin.php:16
+msgid "Simple text questions"
+msgstr "Simplaj tekstaj demandoj"
 
-#: ../../../_who.plugin.php:17
-msgid "Reduces spam by asking the commenter the name of who wrote the article"
-msgstr "Malpliigas spamaĵojn per demando al la komentanto pri la nomo de tiu, kiu skribis la artikolon"
+#: ../../../_captcha.plugin.php:17
+msgid "Reduces spam by asking the commenter a question"
+msgstr "Malpliigas spamaĵojn per demando al la komentanto"
 
-#: ../../../_who.plugin.php:25
+#: ../../../_captcha.plugin.php:25
 msgid "Anti-spam:  "
 msgstr "Kontraŭspamilo: "
 
-#: ../../../_who.plugin.php:96
+#: ../../../_captcha.plugin.php:81
 msgid "You must provide the correct answer to the anti-spam question."
 msgstr "Vi devas doni la ĝustan respondon al la kontra&#365;spama demando."
 
-#: ../../../_who.plugin.php:117
+#: ../../../_captcha.plugin.php:102
 msgid "Questions for all collections"
 msgstr "Demandoj por ĉiuj kolektoj"
 
-#: ../../../_who.plugin.php:118 ../../../_who.plugin.php:130
+#: ../../../_captcha.plugin.php:103 ../../../_captcha.plugin.php:115
 msgid "Format: Question? ||Answer1|Answer2|..."
 msgstr "Ĉenaranĝo: Demando? ||Respondo1|Respondo2|…"
 
-#: ../../../_who.plugin.php:129
+#: ../../../_captcha.plugin.php:114
 msgid "Questions for this collection only"
 msgstr "Demandoj por nur la nuna kolekto"

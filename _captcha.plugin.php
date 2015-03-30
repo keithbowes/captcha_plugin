@@ -1,11 +1,11 @@
 <?php
 
-class who_plugin extends Plugin
+class captcha_plugin extends Plugin
 {
-	var $name = 'Who';
+	var $name = 'Captcha plugin';
 	var $version = '1.0';
 
-	var $code = 'who_plugin';
+	var $code = 'captcha_plugin';
 	var $group = 'antispam';
 	var $number_of_installs = 1;
 
@@ -13,8 +13,8 @@ class who_plugin extends Plugin
 
 	function PluginInit()
 	{
-		$this->short_desc = $this->T_('Who wrote this blog entry?');
-		$this->long_desc = $this->T_('Reduces spam by asking the commenter the name of who wrote the article');
+		$this->short_desc = $this->T_('Simple text questions');
+		$this->long_desc = $this->T_('Reduces spam by asking the commenter a question');
 	}
 
 	private function getInput()
