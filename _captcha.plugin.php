@@ -32,20 +32,13 @@ class captcha_plugin extends Plugin
 		global $Blog;
 		$global_questions = explode("\r\n", $this->Settings->get('globfrag'));
 		$local_questions = explode("\r\n", $this->get_coll_setting('ortfrag', $Blog));
-		$questions = array_merge($global_questions, $local_questions);
-		return $questions;
+		return array_merge($global_questions, $local_questions);
 	}
 
 	private function getQuestion($qno = -1)
 	{
 		$questions = $this->getQuestions();
-		if ($qno < 0)
-		{
-			$qno = count($questions);
-			if ($qno > 1)
-				$qno = rand(1, $qno - 1);
-		}
-
+		$qno = rand(1, count($questions) - 1);
 		return $questions[$qno];
 	}
 
@@ -62,7 +55,6 @@ class captcha_plugin extends Plugin
 	function BeforeCommentFormInsert(& $params)
 	{
 		$frage = unserialize(base64_decode($_POST['captcha_frage']));
-		$comment =& $params['Comment'];
 		$is_preview = $params['is_preview'];
 		header('Content-type: text/html; charset=utf-8');
 
