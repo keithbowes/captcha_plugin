@@ -9,8 +9,6 @@ class captcha_plugin extends Plugin
 	var $group = 'antispam';
 	var $number_of_installs = 1;
 
-	var $apply_rendering = 'never';
-
 	function PluginInit()
 	{
 		$this->short_desc = $this->T_('Simple text questions');
@@ -22,7 +20,7 @@ class captcha_plugin extends Plugin
 		$this->parseQuestion($question, $answer);
 		$ans = base64_encode(serialize($answer));
 		echo '<div class="label">';
-		echo '<label for="captcha_antwort">' . $this->T_('Anti-spam:  ') . '</label></div>';
+		echo '<label for="captcha_antwort">' . $this->T_('Anti-Spam Question:  ') . '</label></div>';
 		echo '<div class="input"><input type="text" name="captcha_antwort" id="captcha_antwort" size="40" maxlength="100" />';
 		echo '<input type="hidden" name="captcha_frage" value="' . $ans . '" />';
 		echo '<span class="note">(' . $question . ')</span>';
@@ -88,7 +86,7 @@ class captcha_plugin extends Plugin
 		{
 			$form =& $params['Form'];
 
-			$form->begin_fieldset(NULL, array('id' => 'who_plugin'));
+			$form->begin_fieldset(NULL, array('id' => 'captcha_plugin'));
 			$this->getInput();
 			$form->end_fieldset();
 		}

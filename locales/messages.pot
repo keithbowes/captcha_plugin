@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://fplanque.net/\n"
-"POT-Creation-Date: 2015-03-30 01:33-0400\n"
+"POT-Creation-Date: 2015-03-30 21:25-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../_captcha.plugin.php:16
+#: ../../../_captcha.plugin.php:14
 msgid "Simple text questions"
 msgstr ""
 
-#: ../../../_captcha.plugin.php:17
+#: ../../../_captcha.plugin.php:15
 msgid "Reduces spam by asking the commenter a question"
 msgstr ""
 
-#: ../../../_captcha.plugin.php:25
-msgid "Anti-spam:  "
+#: ../../../_captcha.plugin.php:23
+msgid "Anti-Spam Question:  "
 msgstr ""
 
-#: ../../../_captcha.plugin.php:81
+#: ../../../_captcha.plugin.php:79
 msgid "You must provide the correct answer to the anti-spam question."
 msgstr ""
 
-#: ../../../_captcha.plugin.php:102
+#: ../../../_captcha.plugin.php:100
 msgid "Questions for all collections"
 msgstr ""
 
-#: ../../../_captcha.plugin.php:103
-#: ../../../_captcha.plugin.php:115
+#: ../../../_captcha.plugin.php:101
+#: ../../../_captcha.plugin.php:113
 msgid "Format: Question? ||Answer1|Answer2|..."
 msgstr ""
 
-#: ../../../_captcha.plugin.php:114
+#: ../../../_captcha.plugin.php:112
 msgid "Questions for this collection only"
 msgstr ""

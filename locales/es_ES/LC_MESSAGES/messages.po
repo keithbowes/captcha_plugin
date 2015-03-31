@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: b 2e\n"
 "Report-Msgid-Bugs-To: http://fplanque.net/\n"
-"POT-Creation-Date: 2015-03-30 01:33-0400\n"
-"PO-Revision-Date: 2015-03-30 01:38-0400\n"
+"POT-Creation-Date: 2015-03-30 21:25-0400\n"
+"PO-Revision-Date: 2015-03-30 21:29-0400\n"
 "Last-Translator: Keith Bowes <keith@localhost>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -12,30 +12,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../../../_captcha.plugin.php:16
+#: ../../../_captcha.plugin.php:14
 msgid "Simple text questions"
 msgstr "Preguntas simples de texto"
 
-#: ../../../_captcha.plugin.php:17
+#: ../../../_captcha.plugin.php:15
 msgid "Reduces spam by asking the commenter a question"
 msgstr "Reduce spam con le pregunta al comentador"
 
-#: ../../../_captcha.plugin.php:25
-msgid "Anti-spam:  "
-msgstr "Antispam:  "
+#: ../../../_captcha.plugin.php:23
+msgid "Anti-Spam Question:  "
+msgstr "Pregunta antispam:  "
 
-#: ../../../_captcha.plugin.php:81
+#: ../../../_captcha.plugin.php:79
 msgid "You must provide the correct answer to the anti-spam question."
-msgstr "Debes proveer el repuesta correcta a la pregunta antispame."
+msgstr "Debes proveer el repuesta correcta a la pregunta antispam."
 
-#: ../../../_captcha.plugin.php:102
+#: ../../../_captcha.plugin.php:100
 msgid "Questions for all collections"
 msgstr "Preguntas para todas las colecciones"
 
-#: ../../../_captcha.plugin.php:103 ../../../_captcha.plugin.php:115
+#: ../../../_captcha.plugin.php:101 ../../../_captcha.plugin.php:113
 msgid "Format: Question? ||Answer1|Answer2|..."
 msgstr "Format: Pregunta? ||Repuesta1|Repuesta2|…"
 
-#: ../../../_captcha.plugin.php:114
+#: ../../../_captcha.plugin.php:112
 msgid "Questions for this collection only"
 msgstr "Preguntas para sólo esta colección"
