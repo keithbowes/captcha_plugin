@@ -9,7 +9,7 @@ class captcha_plugin extends Plugin
 	var $group = 'antispam';
 	var $number_of_installs = 1;
 
-	function PluginInit()
+	function PluginInit(& $params)
 	{
 		$this->short_desc = $this->T_('Simple text questions');
 		$this->long_desc = $this->T_('Reduces spam by asking the commenter a question');
