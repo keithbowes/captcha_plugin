@@ -48,8 +48,11 @@ class captcha_plugin extends Plugin
 			$this->question = $this->getQuestion();
 
 		preg_match('/^(.+)\s+\|\|(.+)$/', $this->question, $matches);
-		list($match, $question, $answer) = $matches;
-		$answer = explode('|', $answer);
+		if ($matches)
+		{
+			list($match, $question, $answer) = $matches;
+			$answer = explode('|', $answer);
+		}
 	}
 
 	function BeforeCommentFormInsert(& $params)
