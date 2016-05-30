@@ -15,16 +15,21 @@ class captcha_plugin extends Plugin
 		$this->long_desc = $this->T_('Reduces spam by asking the commenter a question');
 	}
 
-	private function getInput()
+	private function getInput($form)
 	{
+		global $Session;
+
 		$this->parseQuestion($question, $answer);
 		$ans = base64_encode(serialize($answer));
-		echo '<div class="label">';
-		echo '<label for="captcha_antwort">' . $this->T_('Anti-Spam Question:  ') . '</label></div>';
-		echo '<div class="input"><input type="text" name="captcha_antwort" id="captcha_antwort" size="40" maxlength="100" />';
-		echo '<input type="hidden" name="captcha_frage" value="' . $ans . '" />';
-		echo '<span class="note">(' . $question . ')</span>';
-		echo '</div>';
+		$Session->set('captcha_frage', $ans);
+
+		$form->input_field(array(
+			'label' => $this->T_('Anti-Spam Question'),
+			'name' => 'captcha_antwort',
+			'size' => 40,
+			'maxlength' => 100,
+			'note' => '(' . $question . ')',
+		));
 	}
 
 	private function getQuestions()
@@ -57,7 +62,8 @@ class captcha_plugin extends Plugin
 
 	function BeforeCommentFormInsert(& $params)
 	{
-		$frage = unserialize(base64_decode($_POST['captcha_frage']));
+		global $Session;
+		$frage = unserialize(base64_decode($Session->get('captcha_frage')));
 		$is_preview = $params['is_preview'];
 		header('Content-type: text/html; charset=utf-8');
 
@@ -82,7 +88,7 @@ class captcha_plugin extends Plugin
 			$form =& $params['Form'];
 
 			$form->begin_fieldset(NULL, array('id' => 'captcha_plugin'));
-			$this->getInput();
+			$this->getInput($form);
 			$form->end_fieldset();
 		}
 	}
