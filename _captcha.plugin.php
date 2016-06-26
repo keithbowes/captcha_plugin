@@ -2,12 +2,12 @@
 
 class captcha_plugin extends Plugin
 {
-	var $name = 'Captcha plugin';
-	var $version = '1.0';
+	public $name = 'Captcha plugin';
+	public $version = '1.0';
 
-	var $code = 'captcha_plugin';
-	var $group = 'antispam';
-	var $number_of_installs = 1;
+	public $code = 'captcha_plugin';
+	public $group = 'antispam';
+	public $number_of_installs = 1;
 
 	function PluginInit(& $params)
 	{
@@ -24,6 +24,7 @@ class captcha_plugin extends Plugin
 		$Session->set('captcha_frage', $ans);
 
 		$form->input_field(array(
+			'class' => 'bComment evo_comment form-control form_text_input',
 			'label' => $this->T_('Anti-Spam Question'),
 			'name' => 'captcha_antwort',
 			'size' => 40,
