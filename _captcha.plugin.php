@@ -21,7 +21,11 @@ class captcha_plugin extends Plugin
 
 		$this->parseQuestion($question, $answer);
 		$ans = base64_encode(serialize($answer));
-		$Session->set('captcha_frage', $ans);
+
+		if (is_object($Session))
+			$Session->set('captcha_frage', $ans);
+		else
+			$form->hidden('captcha_frage', $ans);
 
 		$form->input_field(array(
 			'class' => 'bComment evo_comment form-control form_text_input',
@@ -64,11 +68,15 @@ class captcha_plugin extends Plugin
 	function BeforeCommentFormInsert(& $params)
 	{
 		global $Session;
-		$frage = unserialize(base64_decode($Session->get('captcha_frage')));
+		if (is_object($Session))
+			$frage = unserialize(base64_decode($Session->get('captcha_frage')));
+		else
+			$frage = unserialize(base64_decode($_POST['captcha_frage']));
+
 		$is_preview = $params['is_preview'];
 		header('Content-type: text/html; charset=utf-8');
 
-		foreach ($frage as $answer)
+		foreach ((array) $frage as $answer)
 		{
 			$is_correct = strcasecmp($answer, $_POST['captcha_antwort']) == 0;
 			if ($is_correct) break;
