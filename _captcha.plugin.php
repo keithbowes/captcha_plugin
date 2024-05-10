@@ -9,6 +9,8 @@ class captcha_plugin extends Plugin
 	public $group = 'antispam';
 	public $number_of_installs = 1;
 
+	private $question;
+
 	function PluginInit(& $params)
 	{
 		$this->short_desc = $this->T_('Simple text questions');
